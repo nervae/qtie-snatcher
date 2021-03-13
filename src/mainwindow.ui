@@ -6,32 +6,45 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>550</width>
-    <height>480</height>
+    <width>542</width>
+    <height>337</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Main Window</string>
+   <string>qtie-snatcher</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QCheckBox" name="quit_button">
-    <property name="geometry">
-     <rect>
-      <x>220</x>
-      <y>80</y>
-      <width>84</width>
-      <height>34</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Click me</string>
-    </property>
-   </widget>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>468</width>
+        <height>468</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="quit_button">
+      <property name="text">
+       <string>Click me</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
- <resources>
-  <include location="../example.qrc"/>
- </resources>
+ <resources/>
  <connections>
   <connection>
    <sender>quit_button</sender>
@@ -40,8 +53,8 @@
    <slot>quit_button_clicked(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>253</x>
-     <y>94</y>
+     <x>203</x>
+     <y>229</y>
     </hint>
     <hint type="destinationlabel">
      <x>253</x>
